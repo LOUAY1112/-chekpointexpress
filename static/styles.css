@@ -1,0 +1,98 @@
+   @import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Potta+One&family=Roboto:ital,wght@0,700;1,100&display=swap');
+
+   /*css Reset*/
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   /* root Element/variables   */
+   :root {
+     --main-clo: salmon;
+     --main-bg-col: rgb(149, 53, 43);
+     --font1: 'Potta one', cursive;
+     --font2: 'Roboto', sans-serif;
+     --font3: 'Balthazar', serif;
+   }
+
+
+   #navbar {
+     display: flex;
+     height: 12vh;
+     color: white;
+     background-color: black;
+   }
+
+   .navlist {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 70%;
+   }
+
+   /*  logo  */
+   .logo {
+     width: 10%;
+
+   }
+
+   .logo img {
+     filter: invert(1);
+     width: 43%;
+     border: 3px solid var(--main-bg-col);
+     border-radius: 86%;
+     margin: 17px 20px;
+
+   }
+
+   .navlist li {
+     list-style: none;
+     padding: 0 7px;
+
+   }
+
+
+
+   .navlist li a {
+     text-decoration: none;
+     color: white;
+     font-size: 2vw;
+     font-family: var(--font1);
+     font-weight: bold;
+   }
+
+
+   .navlist li a:hover {
+     text-decoration: underline;
+     color: var(--main-clo);
+     cursor: pointer;
+
+   }
+
+   .nav-right {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 20%;
+   }
+
+   #search {
+     padding: 3px;
+     margin: 0 3px;
+     border: 2px solid black;
+     border-radius: 12px;
+     font-weight: bold;
+     font-size: 1em;
+     font-family: var(--font2);
+     outline: none;
+   }
+
+   .search img {
+     width: 1.5vw;
+     position: relative;
+     top: 3px;
+     right: 3vw;
+     cursor: pointer;
+
+   }

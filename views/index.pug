@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title my party producer 
+    link(rel="shortcut icon", href="../static/img/image.png", type="image/x-icon")
+style
+   include ../static/styles.css 
+body
+   
+  //- navbar
+  nav#navbar
+       .logo 
+           img(src="../static/img/image.png",alt="logo")
+       ul.navlist  
+           li #[a(href="#") Home page]
+           li #[a(href="#") Our Services]
+           li #[a(href="#") Contact us]
+       .nav-right
+           input(type="text",name="name",id="search",palceholder="search the info")   
+           .search 
+               img(src="../static/img/image2.png",alt="search icon")
+           button(type="submit",class="btn") search
+
+
+
+
+
+//- Intro section
+section#intro-section 
+
+    | this is intro section
+
+//- Mission section
+section#mission-section 
+ | this is mission section
+
+//- sponsers section 
+section#sponsers-section
+
+  | this is spnsores section
+
+
+//-footer 
+footer#footer 
+ 
+ | this is footer
+ script
+    include ../static/script.js
+
+
+
+
